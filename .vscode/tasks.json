@@ -6,7 +6,7 @@
     "tasks": [
       {
         "label": "run hugo",
-        "command": "hugo server --theme='hugo-theme-fuji' --buildDrafts"
+        "command": "hugo server --theme=fuji --buildDrafts"
       }
     ]
   }
