@@ -1,0 +1,13 @@
+{
+    "version": "2.0.0",
+    "type": "shell",
+    "echoCommand": true,
+    "cwd": "${workspaceFolder}",
+    "tasks": [
+      {
+        "label": "run hugo",
+        "command": "hugo server --theme='hugo-theme-fuji' --buildDrafts"
+      }
+    ]
+  }
+  

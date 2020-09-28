@@ -1,0 +1,46 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "fuRan's Code"
+math = true
+
+
+
+[outputFormats]
+  [outputFormats.SearchIndex]
+    isPlainText = true
+    notAlternative = true
+    mediaType = "application/json"
+    path = "/search/"
+
+[outputs]
+  home = ["HTML", "RSS", "SearchIndex"]
+
+[menu]
+  [[menu.nav]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.nav]]
+    name = "Search"
+    url = "/search/"
+    weight = 2
+
+  [[menu.link]]
+    name = "GitHub"
+    url = "https://github.com/NgeKaworu"
+    weight = 1
+
+[params]
+  showToc = true
+  subTitle = "皆無は真実、万事が許す。"
+
+[markup]
+[markup.goldmark]
+  [markup.goldmark.renderer]
+    unsafe = true  # Enable user to embed HTML snippets in Markdown content
+[markup.highlight]
+  codeFences = false  # Disable Hugo's code highlighter
+
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 3
