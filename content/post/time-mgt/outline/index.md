@@ -12,11 +12,3 @@ tags: ["线框图", "x-mind"]
 > [运维篇](/post/time-mgt/ops/)  
 > [后语](/post/time-mgt/conclusion/)  
 
-## 写点啥呢
-
-123
-
-![test](/post/first/1.gif)
-![test1](/post/first/2.jpg)
-
-## 写点啥呢2
