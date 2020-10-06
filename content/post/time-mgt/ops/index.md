@@ -330,7 +330,7 @@ server {
 ### umi打包配置 [官方文档](https://umijs.org/zh-CN/config)
 ```json
   hash: true, // 开启hash命名
-  base: "/time-mgt/", // 保证和下面非根匹配目录相同
+  base: "/time-mgt", // 保证和下面非根匹配目录相同
   publicPath: "/time-mgt/", // 静态资源
   runtimePublicPath: true, // 运行时静态资源
   dynamicImport: {
