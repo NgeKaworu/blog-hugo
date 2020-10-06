@@ -359,3 +359,8 @@ server {
 }
 
 ```
+
+
+## 相关链接
+[ssl证书](https://certbot.eff.org/lets-encrypt/centosrhel8-nginx)
+[jenkins自动化](https://www.jenkins.io/)
