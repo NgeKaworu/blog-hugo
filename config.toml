@@ -1,8 +1,8 @@
-baseURL = "http://example.org/"
+baseURL = "http://furan.xyz/"
 languageCode = "zh-cn"
 title = "fuRan's Code"
 math = true
-
+theme = "fuji"
 
 
 [outputFormats]

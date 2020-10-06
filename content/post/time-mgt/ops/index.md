@@ -1,5 +1,5 @@
 ---
-title: "[柳比歇夫时间管理] 运维篇"
+title: "[柳比歇夫时间管理] 部署篇"
 date: 2020-09-29T02:51:19+08:00
 draft: true
 tags: ["linux", "nginx", "centos"]
@@ -9,7 +9,7 @@ tags: ["linux", "nginx", "centos"]
 > [前言](/post/time-mgt/outline/)  
 > [前端篇](/post/time-mgt/front-end/)  
 > [后端篇](/post/time-mgt/back-end/)  
-> [运维篇](/post/time-mgt/ops/)  
+> [部署篇](/post/time-mgt/ops/)  
 > [后语](/post/time-mgt/conclusion/)  
 
 ## 环境信息
@@ -94,3 +94,4 @@ systemctl start nginx
 > ```
 
 ### nginx配置
+

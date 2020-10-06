@@ -9,5 +9,5 @@ tags: ["deno", "mongo"]
 > [前言](/post/time-mgt/outline/)  
 > [前端篇](/post/time-mgt/front-end/)  
 > [后端篇](/post/time-mgt/back-end/)  
-> [运维篇](/post/time-mgt/ops/)  
+> [部署篇](/post/time-mgt/ops/)  
 > [后语](/post/time-mgt/conclusion/)  
