@@ -279,12 +279,11 @@ cd www
 git clone https://github.com/NgeKaworu/time-mgt-deno.git
 ```
 2. shell 执行一遍进行初始化 
-> 因为deno mongo驱动原因，索引建立是通过js脚本实现的，但开了身份验证后，会无法执行成功，尚未找到原因。请先关闭mongo身份验证。
 ```bash
 deno run -A --unstable /home/www/time-mgt-deno/main.ts -m=mongodb://localhost:27017 -i=true --db='time-mgt' -k=[your secert]
 ```
 
-3. 编写systemctl脚本，`vim /etc/systemd/system/time-mgt-denod.service`
+1. 编写systemctl脚本，`vim /etc/systemd/system/time-mgt-denod.service`
 ```
 [Unit]
 Description=time mgt deno 
