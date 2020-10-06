@@ -1,4 +1,4 @@
-baseURL = "http://furan.xyz/"
+baseURL = "https://furan.xyz/"
 languageCode = "zh-cn"
 title = "fuRan's Code"
 math = true

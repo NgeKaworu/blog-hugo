@@ -313,14 +313,14 @@ systemctl enable time-mgt-denod
 
 ### 添加nginx配置
 ```bash
-vim /etc/nginx/conf.d/api.funran.xyz
+vim /etc/nginx/conf.d/api.funran.xyz.conf
 
 server {
     listen  80;
     server_name api.furan.xyz;
 
-    localtion ^~ /time-mgt/ {
-        proxy_pass http://127.0.0.1:8000;    
+    location ^~ /time-mgt/ {
+        proxy_pass http://127.0.0.1:8000/;    
     }
 }
 
@@ -341,18 +341,19 @@ server {
 
 ### 添加nginx配置
 ```bash
-vim /etc/nginx/conf.d/furan.xyz
+vim /etc/nginx/conf.d/furan.xyz.conf
 
 server {
     listen  80;
     server_name furan.xyz;
-    root /home/www
+    root /home/www;
 
-    localtion / {
-        alias /home/www/blog/index.html
+    location / {
+        root /home/www/blog/;
+        try_files $uri $uri/ /index.html;
     }
 
-    localtion ^~ /time-mgt/ {
+    location ^~ /time-mgt/ {
         try_files $uri $uri/ /time-mgt/index.html;
     }
 }
