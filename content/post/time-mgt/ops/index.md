@@ -280,7 +280,7 @@ git clone https://github.com/NgeKaworu/time-mgt-deno.git
 ```
 2. shell 执行一遍进行初始化 
 ```bash
-deno run -A --unstable /home/www/time-mgt-deno/main.ts -m=mongodb://localhost:27017 -i=true --db='time-mgt' -k=[your secert]
+deno run -A --unstable /home/www/time-mgt-deno/main.ts -m=mongodb://[your user]:[your pwd]@localhost:27017 -i=true --db='time-mgt' -k=[your secert]
 ```
 
 1. 编写systemctl脚本，`vim /etc/systemd/system/time-mgt-denod.service`
@@ -294,7 +294,7 @@ After=network.target
 Type=simple
 PIDFile=/home/www/time-mgt-deno/deno.pid
 WorkingDirectory=/home/www/time-mgt-deno
-ExecStart=/root/.deno/bin/deno run -A --unstable main.ts -m=mongodb://localhost:27017 -i=false --db='time-mgt' -k=[your secert]
+ExecStart=/root/.deno/bin/deno run -A --unstable main.ts -m=mongodb://[your user]:[your pwd]@localhost:27017 -i=false --db='time-mgt' -k=[your secert]
 # On failer, wait 60 seconds before auto-restarting.
 RestartSec=60
 # Auto-restart on failure.
