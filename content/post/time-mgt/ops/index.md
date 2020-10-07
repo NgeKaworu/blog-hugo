@@ -5,13 +5,6 @@ draft: false
 tags: ["linux", "nginx", "centos", "mongo", "systemctl", "firewall"]
 ---
 
-## 目录
-> [前言](/post/time-mgt/outline/)  
-> [前端篇](/post/time-mgt/front-end/)  
-> [后端篇](/post/time-mgt/back-end/)  
-> [部署篇](/post/time-mgt/ops/)  
-> [后语](/post/time-mgt/conclusion/)  
-
 ## 环境信息
 ``` bash
 [root@furan ~]# cat /etc/centos-release
@@ -23,7 +16,7 @@ deno 1.3.0
 [root@furan ~]# git --version
 git version 2.18.4
 ```
-
+<!--more-->
 ## 写在最前
  请先确保安装了GLIBC_2.18， 确认方法如下，如输出列表没有匹配，则应先升级。  
  <font color="red">升级务必慎重</font>  
@@ -363,3 +356,10 @@ server {
 ## 相关链接
 [ssl证书](https://certbot.eff.org/lets-encrypt/centosrhel8-nginx)
 [jenkins自动化](https://www.jenkins.io/)
+
+## 其他篇章
+> [前言](/post/time-mgt/outline/)  
+> [前端篇](/post/time-mgt/front-end/)  
+> [后端篇](/post/time-mgt/back-end/)  
+> [部署篇](/post/time-mgt/ops/)  
+> [后语](/post/time-mgt/conclusion/)  

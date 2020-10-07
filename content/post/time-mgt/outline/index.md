@@ -5,17 +5,10 @@ draft: false
 tags: ["线框图", "脑图"]
 ---
 
-## 目录
-> [前言](/post/time-mgt/outline/)  
-> [前端篇](/post/time-mgt/front-end/)  
-> [后端篇](/post/time-mgt/back-end/)  
-> [部署篇](/post/time-mgt/ops/)  
-> [后语](/post/time-mgt/conclusion/)  
-
 ## 写在前面
 
 本文旨在通过“柳比歇夫时间管理”（下称“柳时管”）这个项目，在玩一玩新的语言（deno、ts）同时，尽可能的简述清楚一个项目从**原型设计**到**部署篇开发**的主要过程，并从中锻炼作者写作和表述能力。文中不会涉及到诸如安装、api这样基础的详解；主要是**理念**和**流程**的概述，且技术深度不高，如有不足，还望诸公斧正。
-
+<!--more-->
 ## 什么是柳比歇夫时间管理？
 
 简单地说，柳比歇夫时间管理法就是要记录时间、分析时间、消除时间浪费、重新安排自己的时间。是个人时间定量管理的方法  
@@ -37,3 +30,10 @@ tags: ["线框图", "脑图"]
 ## 表结构
 
 ![表设计](/post/time-mgt/outline/table-design.png)
+
+## 其他篇章
+> [前言](/post/time-mgt/outline/)  
+> [前端篇](/post/time-mgt/front-end/)  
+> [后端篇](/post/time-mgt/back-end/)  
+> [部署篇](/post/time-mgt/ops/)  
+> [后语](/post/time-mgt/conclusion/)  

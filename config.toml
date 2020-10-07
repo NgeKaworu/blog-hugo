@@ -3,7 +3,7 @@ languageCode = "zh-cn"
 title = "fuRan's Code"
 math = true
 theme = "fuji"
-
+hasCJKLanguage = true
 
 [outputFormats]
   [outputFormats.SearchIndex]

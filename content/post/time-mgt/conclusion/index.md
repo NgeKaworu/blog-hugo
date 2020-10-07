@@ -5,7 +5,7 @@ draft: true
 tags: ["okr", "xmind"]
 ---
 
-## 目录
+## 其他篇章
 > [前言](/post/time-mgt/outline/)  
 > [前端篇](/post/time-mgt/front-end/)  
 > [后端篇](/post/time-mgt/back-end/)  
