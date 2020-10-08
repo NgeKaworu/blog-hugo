@@ -5,7 +5,7 @@ draft: false
 tags: ["umi", "react", "axios"]
 ---
 
-## 项目目录
+## 项目地图
 ```bash
 $ tree -I js-sdk
 .
