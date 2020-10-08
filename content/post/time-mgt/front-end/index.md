@@ -1,9 +1,8 @@
 ---
 title: "[柳比歇夫时间管理] 前端篇"
-date: 2020-10-07T01:23:47+08:00
-draft: true
+date: 2020-09-29
+draft: false
 tags: ["umi", "react", "axios"]
-lastmod: 2020-10-08T01:25:39+08:00
 ---
 
 ## 项目目录

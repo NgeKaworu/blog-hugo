@@ -4,6 +4,7 @@ title = "fuRan's Code"
 math = true
 theme = "fuji"
 hasCJKLanguage = true
+enableGitInfo = true
 
 [outputFormats]
   [outputFormats.SearchIndex]
@@ -33,6 +34,8 @@ hasCJKLanguage = true
 [params]
   showToc = true
   subTitle = "皆無は真実、万事が許す。"
+  showWordCounter = true
+  showReadTime = true
 
 [markup]
 [markup.goldmark]
