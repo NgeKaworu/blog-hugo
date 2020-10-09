@@ -5,13 +5,16 @@ draft: true
 tags: ["deno", "mongo"]
 ---
 
+## 项目地址
+项目源码在这[github](https://github.com/NgeKaworu/time-mgt-deno)，欢迎clone下来配合食用
+
 ## Deno 初体验
 先说说Deno用起来的感受。  
 首先它支持url导入了，这意味着不用被node_modules恶心了，但是如果你要重装依赖，好像也没区别=- =。  
-然后原生支持`await\async`、`typescript`；当然他最近又要把内部核心包转回`js`写了，不过这主要是为了性能，和我们关系不大。
+然后原生支持`await\async`、`typescript`；当然他最近又要把内部核心包转回`js`写了，不过这主要是为了性能，和我们关系不大。  
 最后，更新还是蛮频繁的，玩玩就行了，不能拿去做生产。  
-
 <!--more-->
+
 ## 项目地图
 ```shell
 $ tree -I ".deno_plugins|.vscode"

@@ -1,8 +1,8 @@
 ---
-title: "[柳比歇夫时间管理] 结尾"
+title: "[柳比歇夫时间管理] 结语"
 date: 2020-09-29T02:51:19+08:00
 draft: true
-tags: ["okr", "xmind"]
+tags: ["okr", "xmind", "燃尽图"]
 ---
 
 ## 其他篇章

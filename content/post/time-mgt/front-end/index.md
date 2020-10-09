@@ -5,6 +5,9 @@ draft: false
 tags: ["umi", "react", "axios"]
 ---
 
+## 项目地址
+项目源码在这[github](https://github.com/NgeKaworu/time-mgt-umi3)，欢迎clone下来配合食用
+
 ## 项目地图
 ```bash
 $ tree -I js-sdk
