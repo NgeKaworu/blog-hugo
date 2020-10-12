@@ -1,9 +1,12 @@
 ---
-title: "[柳比歇夫时间管理] 后端篇"
+title: "[柳比歇夫时间管理] deno后端篇 【废弃】"
 date: 2020-09-29
 draft: false
 tags: ["deno", "mongo"]
 ---
+
+## 【Deprecated】弃用
+Deno还是太不稳定了，已经用go重构了，请移步[这里](/post/time-mgt/back-end/)
 
 ## 项目地址
 项目源码在这[github](https://github.com/NgeKaworu/time-mgt-deno)，欢迎clone下来配合食用
@@ -260,6 +263,7 @@ export function RetFail(ctx: Context, errMsg: string, status: number = 200) {
 ## 其他篇章
 > [前言](/post/time-mgt/outline/)  
 > [前端篇](/post/time-mgt/front-end/)  
-> [后端篇](/post/time-mgt/back-end/)  
+> [deno后端篇【废弃】](/post/time-mgt/back-end/)
+> [go后端篇](/post/time-mgt/back-end-go/)  
 > [部署篇](/post/time-mgt/ops/)  
 > [后语](/post/time-mgt/conclusion/)  
