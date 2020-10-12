@@ -412,7 +412,7 @@ After=network.target
 Type=simple
 PIDFile=/home/www/time-mgt-go/go.pid
 WorkingDirectory=/home/www/time-mgt-go
-ExecStart=/home/www/time-mgt-go/time-mgt-go -m=mongodb://furan:FURANO0o0@localhost:27017 -i=false --db=time-mgt -k=6sQXlzCyrIaYYDbb
+ExecStart=/home/www/time-mgt-go/time-mgt-go -m=mongodb://[your name]:[you pwd]@localhost:27017 -i=false --db=time-mgt -k=[your secert]
 # On failer, wait 60 seconds before auto-restarting.
 RestartSec=60
 # Auto-restart on failure.
