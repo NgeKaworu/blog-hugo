@@ -276,7 +276,7 @@ git clone https://github.com/NgeKaworu/time-mgt-deno.git
 deno run -A --unstable /home/www/time-mgt-deno/main.ts -m=mongodb://[your user]:[your pwd]@localhost:27017 -i=true --db='time-mgt' -k=[your secert]
 ```
 
-1. 编写systemctl脚本，`vim /etc/systemd/system/time-mgt-denod.service`
+3. 编写systemctl脚本，`vim /etc/systemd/system/time-mgt-denod.service`
 ```
 [Unit]
 Description=time mgt deno 
@@ -351,6 +351,85 @@ server {
 }
 
 ```
+
+## Go 后端
+### 交叉编译
+分享vscode配置
+```json
+{
+  "version": "2.0.0",
+  "type": "shell",
+  "echoCommand": true,
+  "cwd": "${workspaceFolder}",
+  "tasks": [
+    {
+      "label": "build linux",
+      "command": "CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o '${workspaceFolder}/bin/'",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
+```
+
+`powershell`
+```powershell
+SET CGO_ENABLED=0
+SET GOOS=linux
+SET GOARCH=amd64
+go build main.go
+```
+
+`git bash`
+```shell
+CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build main.go
+```
+
+查看linux 系统架构  
+`arch`
+```shell
+[root@furan ~]# arch
+x86_64
+```
+
+| 参数   | 说明                                                  |
+| ------ | ----------------------------------------------------- |
+| GOOS   | 目标平台的操作系统（darwin、freebsd、linux、windows） |
+| GOARCH | 目标平台的体系架构（386、amd64、arm）                 |
+| CGO    | C/C++编译；交叉编译不支持  所以要禁用它               |
+
+### systemctl 配置
+1. 添加配置文件
+`vim /etc/systemd/system/time-mgt-god.service`
+```vim
+Description=time-mgt-go
+Documentation=https://furan.xyz
+After=network.target
+
+[Service]
+Type=simple
+PIDFile=/home/www/time-mgt-go/go.pid
+WorkingDirectory=/home/www/time-mgt-go
+ExecStart=/home/www/time-mgt-go/time-mgt-go -m=mongodb://furan:FURANO0o0@localhost:27017 -i=false --db=time-mgt -k=6sQXlzCyrIaYYDbb
+# On failer, wait 60 seconds before auto-restarting.
+RestartSec=60
+# Auto-restart on failure.
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+```
+
+2. 启动 `systemctl start time-mgt-god`
+3. 开机启动 `systemctl enable time-mgt-god`
+
+如果权限不够记得，记得加  
+`chmod 777 ./time-mgt-go`
+
+### nginx 配置
+和[Deno](#添加nginx配置)那里的一致
 
 
 ## 相关链接
