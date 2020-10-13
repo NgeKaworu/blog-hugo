@@ -1,7 +1,6 @@
 baseURL = "https://furan.xyz/"
 languageCode = "zh-cn"
 title = "fuRan's Code"
-math = true
 theme = "fuji"
 hasCJKLanguage = true
 enableGitInfo = true
@@ -36,6 +35,7 @@ enableGitInfo = true
   subTitle = "皆無は真実、万事が許す。"
   showWordCounter = true
   showReadTime = true
+  math = true
 
 [markup]
 [markup.goldmark]
