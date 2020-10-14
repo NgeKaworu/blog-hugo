@@ -1,5 +1,5 @@
 ---
-title: "章节2 抄录"
+title: "【人月神话】章节2 抄录"
 date: 2020-10-13T10:13:17+08:00
 draft: false
 tags: ["人月神话","阅读笔记"]
@@ -13,7 +13,7 @@ Good cooking takes time. If you are made to wait, it is to serve you better, and
 
 <!--more-->
 
-## 延期的主要原因
+## 导致项目延期的主要原因
 
 1. 错误的预估，或者说过于乐观的预估。
 2. 以为人月可以互换
