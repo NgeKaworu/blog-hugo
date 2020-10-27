@@ -1,0 +1,21 @@
+<div class="mermaid" style="background: #fff;" align="{{ if .Get "align" }}
+                                {{ .Get "align" }}
+                            {{ else }} 
+                                center
+                            {{ end }}"> 
+    {{ safeHTML .Inner }}
+</div>
+
+{{ if .Get "loadMermaidJS" }}
+<script src="https://cdn.jsdelivr.net/npm/mermaid@8.8.2/dist/mermaid.min.js"></script>
+
+<script>
+  mermaid.initialize({
+    sequence: { 
+    	showSequenceNumbers: {{ if .Get "showSequenceNumbers" }}true{{ else }}false{{ end }},
+    	actorMargin: {{ if .Get "actorMargin" }}{{ .Get "actorMargin" }}{{ else }}50{{ end }}, 
+    	diagramMarginX:10, 
+    	diagramMarginY:10 },
+  });
+</script>
+{{ end }}
