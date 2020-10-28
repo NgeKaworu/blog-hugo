@@ -36,6 +36,7 @@ enableGitInfo = true
   showWordCounter = true
   showReadTime = true
   math = true
+  description = "宓冉的技术博客，专注前端、大前端、微前端。"
 
 [markup]
 [markup.goldmark]
