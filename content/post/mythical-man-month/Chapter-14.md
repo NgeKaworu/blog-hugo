@@ -3,6 +3,11 @@ date: 2020-10-27T20:11:41+08:00
 title: "【人月神话】章节14 阅读笔记"
 draft: false
 tags: ["人月神话","阅读笔记"]
+keywords:
+- 人月神话
+- 里程碑
+- PERT
+description : "本章严肃的讨论了里程碑，并推荐了一种工具 —— PERT"
 
 ---
 
