@@ -19,7 +19,7 @@ Follow up: If you have figured out the O(n) solution, try coding another soluti
 进阶：如果找到了O(n)的解，尝试优化它。
 
 ## 思路
-回溯 + 双指针  
+双指针  
 循环 [-2,1,-3,4,-1,2,1,-5,4]  
 #### I.   
 [-2, 1, -3, 4, -1, 2, 1, -5, 4]  
