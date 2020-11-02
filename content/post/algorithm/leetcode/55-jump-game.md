@@ -21,7 +21,8 @@ Determine if you are able to reach the last index.
 确定您是否能够达到最后一个索引  
 
 ## 思路
-回溯吧
+正解是贪心
+~~回溯吧~~
 ```go
 func canJump(nums []int) bool {
 	return backtrack(nums, 0, len(nums)-1)
@@ -40,7 +41,7 @@ func backtrack(nums []int, start, max int) bool {
 	return false
 }
 ```
-超时了, 加一个局部最优解的优化试试=- =
+~~超时了, 加一个局部最优解的优化试试=- =~~
 
 ## 代码
 ### go
