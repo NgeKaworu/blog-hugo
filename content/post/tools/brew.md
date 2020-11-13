@@ -41,6 +41,7 @@ brew cask install sourcetree
 # sftp 客户端
 brew cask install electerm
 brew install mongodb-community@4.4
+brew cask install steam
 
 # go blog 生成器
 brew install hugo
