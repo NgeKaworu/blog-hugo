@@ -36,6 +36,11 @@ brew cask install feishu
 brew cask install wechat
 brew cask install onedrive
 brew cask install robo-3t
+brew cask install postman
+brew cask install sourcetree
+# sftp 客户端
+brew cask install electerm
+brew install mongodb-community@4.4
 
 # go blog 生成器
 brew install hugo
@@ -43,10 +48,15 @@ brew install go
 # 下载工具 配置见附录
 brew install aria2
 brew install p7zip
-
+brew install nvm
+# 解压工具
+brew cask install the-unarchiver
+# 剪切板
+brew cask install jumpcut
 ```
 
 ## 附录
 [mac aria2指南](https://gist.github.com/maboloshi/#file-aria2-conf)
 [mac go mod配置](https://www.jianshu.com/p/760c97ff644c)
 [mac 配置mongo](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)
+[mac 配置vscode右键菜单](https://liam.page/2020/04/22/Open-in-VSCode-on-macOS/)
