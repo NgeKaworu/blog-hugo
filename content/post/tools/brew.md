@@ -53,7 +53,9 @@ brew install nvm
 # 解压工具
 brew cask install the-unarchiver
 # 剪切板
-brew cask install jumpcut
+brew cask install maccy
+# 温度监控 收费
+brew cask install istat-menus
 ```
 
 ## 附录
