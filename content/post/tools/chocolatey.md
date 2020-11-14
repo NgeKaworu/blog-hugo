@@ -34,6 +34,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 # 下载工具 需配置
 cinst aria2
 cinst nvm 
+# 类似于mac的聚集搜索
 cinst listary
 cinst sourcetree
 cinst git.install

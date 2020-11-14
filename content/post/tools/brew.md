@@ -61,7 +61,9 @@ brew cask install istat-menus
 # 快捷键助手
 brew cask install cheatsheet
 # 窗口管理
-brew cask install spectacle
+brew cask install rectangle
+# 播放器
+brew cask install iina
 ```
 
 ## 附录
