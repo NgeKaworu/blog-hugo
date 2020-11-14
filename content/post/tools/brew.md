@@ -46,16 +46,22 @@ brew cask install steam
 # go blog 生成器
 brew install hugo
 brew install go
+brew install yarn
+brew install deno
 # 下载工具 配置见附录
 brew install aria2
 brew install p7zip
 brew install nvm
 # 解压工具
-brew cask install the-unarchiver
+brew cask install keka
 # 剪切板
 brew cask install maccy
 # 温度监控 收费
 brew cask install istat-menus
+# 快捷键助手
+brew cask install cheatsheet
+# 窗口管理
+brew cask install spectacle
 ```
 
 ## 附录
