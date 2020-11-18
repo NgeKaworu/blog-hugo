@@ -1,8 +1,17 @@
 ---
-title: "[柳比歇夫时间管理] 部署篇"
+title: "【柳比歇夫时间管理】 部署篇"
 date: 2020-09-29T02:51:19+08:00
 draft: false
-tags: ["linux", "nginx", "centos", "mongo", "systemctl", "firewall"]
+tags: ["环境搭建", "个人项目"]
+keywords:
+- "个人项目"
+- "linux"
+- "nginx"
+- "centos"
+- "mongo"
+- "systemctl"
+- "firewall"
+description : "【柳比歇夫时间管理】 部署篇"
 ---
 
 ## 环境信息

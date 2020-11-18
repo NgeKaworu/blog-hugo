@@ -1,8 +1,15 @@
 ---
-title: "[柳比歇夫时间管理] deno后端篇 【废弃】"
+title: "【柳比歇夫时间管理】 deno后端篇 【废弃】"
 date: 2020-09-29
 draft: false
-tags: ["deno", "mongo"]
+tags: ["后端", "个人项目"]
+keywords:
+- "deno"
+- "个人项目"
+- "mongo"
+- typescript
+- json web token
+description : "柳比歇夫时间管理deno后端篇"
 ---
 
 ## 【Deprecated】弃用

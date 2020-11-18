@@ -1,8 +1,16 @@
 ---
-title: "[柳比歇夫时间管理] 前端篇"
+title: "【柳比歇夫时间管理】 前端篇"
 date: 2020-09-29
 draft: false
-tags: ["umi", "react", "axios"]
+tags: ["前端", "个人项目"]
+keywords:
+- "react"
+- "个人项目"
+- "dva"
+- "redux"
+- "umi"
+- "typescript"
+description : "【柳比歇夫时间管理】 前端篇"
 ---
 
 ## 项目地址

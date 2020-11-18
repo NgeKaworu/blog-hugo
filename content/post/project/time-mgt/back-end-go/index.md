@@ -1,8 +1,14 @@
 ---
-title: "[柳比歇夫时间管理] go后端篇"
+title: "【柳比歇夫时间管理】 go后端篇"
 date: 2020-10-12T17:04:52+08:00
 draft: false
-tags: ["go"]
+tags: ["后端", "个人项目"]
+keywords:
+- "go"
+- "个人项目"
+- "mongo"
+- json web token
+description : "【柳比歇夫时间管理】 go后端篇"
 ---
 
 ## Q&A
