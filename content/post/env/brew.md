@@ -1,8 +1,8 @@
 ---
 date: 2020-11-12T21:18:15+08:00
-title: "[mac]使用brew安装常用开发工具"
-draft: true
-tags: ["开发环境"]
+title: "【mac】使用brew安装常用开发工具"
+draft: false
+tags: ["环境搭建"]
 keywords:
 - "开发工具"
 - "mac"

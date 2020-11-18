@@ -1,7 +1,13 @@
 ---
-title: "Centos8 Hugo 安装"
+title: "【centos8】 Hugo 安装"
 date: 2020-10-24T00:12:42+08:00
 draft: false
+tags: ["环境搭建"]
+keywords:
+- "hugo"
+- "cent os 8"
+- "go"
+description : "Centos8 Hugo 安装"
 ---
 
 ## 安装go

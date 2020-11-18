@@ -1,6 +1,6 @@
 ---
 date: 2020-11-01T09:49:27+08:00
-title: "55 Jump Game"
+title: "【leetcode】55 Jump Game"
 draft: false
 tags: ["算法"]
 keywords:

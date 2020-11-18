@@ -1,8 +1,8 @@
 ---
 date: 2020-11-12T21:18:05+08:00
-title: "[win10]使用chocolatey极速搭建开发环境"
-draft: true
-tags: ["开发环境"]
+title: "【win10】使用chocolatey极速搭建开发环境"
+draft: false
+tags: ["环境搭建"]
 keywords:
 - "chocolatey"
 - "开发工具"

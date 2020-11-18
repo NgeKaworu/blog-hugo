@@ -1,6 +1,6 @@
 ---
 date: 2020-10-28T02:10:23+08:00
-title: "51 N Queens"
+title: "【leetcode】51 N Queens"
 draft: false
 tags: ["算法"]
 keywords:

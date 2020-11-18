@@ -1,6 +1,6 @@
 ---
 date: 2020-11-04T08:10:09+08:00
-title: "57 Insert Intervals"
+title: "【leetcode】57 Insert Intervals"
 draft: false
 tags: ["算法"]
 keywords:
