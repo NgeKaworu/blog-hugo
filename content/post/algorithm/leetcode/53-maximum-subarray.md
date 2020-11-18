@@ -2,7 +2,7 @@
 date: 2020-10-30T21:57:33+08:00
 title: "53 Maximum Subarray"
 draft: false
-tags: ["leetcode", "algorithm", "算法"]
+tags: ["算法"]
 keywords:
 - leetcode
 - 算法

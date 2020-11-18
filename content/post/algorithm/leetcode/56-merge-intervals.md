@@ -2,7 +2,7 @@
 date: 2020-11-02T17:57:05+08:00
 title: "56 Merge Intervals"
 draft: false
-tags: ["leetcode", "algorithm", "算法", "快速排序"]
+tags: ["算法"]
 keywords:
 - leetcode
 - 算法

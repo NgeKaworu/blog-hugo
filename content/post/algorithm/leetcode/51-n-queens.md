@@ -2,7 +2,12 @@
 date: 2020-10-28T02:10:23+08:00
 title: "51 N Queens"
 draft: false
-tags: ["leetcode", "algorithm", "算法"]
+tags: ["算法"]
+keywords:
+- 算法
+- N后
+- 回溯
+description: "51 N Queens 思路 解法 例题赏析"
 ---
 # 51. N 皇后
 

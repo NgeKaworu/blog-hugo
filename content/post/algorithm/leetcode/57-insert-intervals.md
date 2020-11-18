@@ -2,13 +2,13 @@
 date: 2020-11-04T08:10:09+08:00
 title: "57 Insert Intervals"
 draft: false
-tags: ["leetcode", "algorithm", "算法", "快速排序"]
+tags: ["算法"]
 keywords:
 - leetcode
 - 算法
 - 线性查询
 - 插入算法
-description : "leetcode 57. 插入区间解题思路，最快代码赏析。"
+description: "leetcode 57. 插入区间解题思路，最快代码赏析。"
 ---
 
 # 57. 插入区间

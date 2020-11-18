@@ -2,11 +2,11 @@
 date: 2020-11-09T00:05:37+08:00
 title: "求字符串组合(字母不重复)技巧"
 draft: false
-tags: ["算法技巧", "algorithm", "排列组合"]
+tags: ["算法"]
 keywords:
-- "算法技巧"
-- "组合"
-- "algorithm"
+- 算法技巧
+- 排列组合
+- algorithm
 description : "求字符串组合(字母不重复)技巧"
 ---
 

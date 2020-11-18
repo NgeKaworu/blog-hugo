@@ -2,7 +2,7 @@
 date: 2020-10-31T07:16:52+08:00
 title: "54 Spiral Matrix"
 draft: false
-tags: ["leetcode", "algorithm", "算法"]
+tags: ["算法"]
 keywords:
 - leetcode
 - 算法
