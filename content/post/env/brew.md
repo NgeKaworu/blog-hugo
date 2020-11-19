@@ -66,6 +66,15 @@ brew cask install rectangle
 brew cask install iina
 ```
 
+## 常用命令
+
+```bash
+# 更新所有包
+brew upgrade
+# 更新所有app
+brew upgrade --cask --greedy
+```
+
 ## 附录
 [mac aria2指南](https://gist.github.com/maboloshi/#file-aria2-conf)
 [mac go mod配置](https://www.jianshu.com/p/760c97ff644c)
