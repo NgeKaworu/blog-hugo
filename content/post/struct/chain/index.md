@@ -1,7 +1,7 @@
 ---
 date: 2020-11-21T22:20:13+08:00
 title: "【数据结构】链表(chain)学记笔记"
-draft: true
+draft: false
 tags: ["数据结构"]
 keywords:
 - "数据结构"
@@ -22,24 +22,25 @@ description : "数据结构学习之链表(chain), 实现、交换节点、并�
 查了一圈资料, 没找到链表在前端的应用场景, 据我所知, React的Vitual Dom树是用Fiber链表实现的
 
 ## 代码
-[仓库地址(附测试用例)](https://github.com/NgeKaworu/goLab/blob/main/struct/chain/chain.go)
+[完整代码(附测试用例)](https://github.com/NgeKaworu/goLab/blob/main/struct/chain/chain.go)
 
-### 基本
+### 基本结构
+```go
 // Chain 链表
 type Chain struct {
 	Head *ListNode
 }
 
-// Len 返回长度
-func (c *Chain) Len() (l int) {
-	cursor := c.Head
-	for cursor != nil {
-		l++
-		cursor = cursor.Next
-	}
-	return
-}
 
+// ListNode 节点
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}
+```
+
+### 构造函数
+```go
 // FromArr 数组转链表
 func FromArr(arr []int) *Chain {
 	cur := new(ListNode)
@@ -53,40 +54,21 @@ func FromArr(arr []int) *Chain {
 	}
 	return c
 }
+```
 
-// ToArr 链表转数组
-func (c *Chain) ToArr() (arr []int) {
-	cursor := c.Head
-	for cursor != nil {
-		arr = append(arr, cursor.Val)
-		cursor = cursor.Next
-	}
-	return
-}
-
-func (c *Chain) String() (s string) {
-	cur := c.Head
-	for cur != nil {
-		s += strconv.Itoa(cur.Val) + " -> "
-		cur = cur.Next
-	}
-	return
+### 增删改查 基本操作
+```go
+// Insert 向节点后插入
+func (l *ListNode) Insert(val int) *ListNode {
+	n := &ListNode{val, l.Next}
+	l.Next = n
+	return l
 }
 
 // InsertH 头插法
 func (c *Chain) InsertH(val int) *Chain {
 	l := &ListNode{val, c.Head}
 	c.Head = l
-	return c
-}
-
-// InsertT 尾插法
-func (c *Chain) InsertT(val int) *Chain {
-	cursor := c.Head
-	for cursor.Next.Next != nil {
-		cursor = cursor.Next
-	}
-	cursor.Insert(val)
 	return c
 }
 
@@ -150,14 +132,28 @@ func (c *Chain) Find(val int) *ListNode {
 
 	return cur
 }
+```
 
+### 交换节点位置
+交换这里会有四种状况, 分别是: 不相邻头节点和其它节点、相邻的头节点和其它节点、不相邻的两个其它节点、相邻的两个其它节点.  
+#### 不相邻头节点和其它节点
+![head](./head.png)
+#### 相邻的头节点和其它节点
+![head_near](./head_near.png)
+#### 不相邻的两个其它节点
+![another](./another.png)
+#### 相邻的两个其它节点
+![another_near](./another_near.png)
+
+```go
 // Swap 交换节点位置
 func (c *Chain) Swap(n1, n2 int) *Chain {
 	if n1 == n2 {
 		log.Fatalf("same node")
 	}
 
-	cur := c.Head
+    cur := c.Head
+    
 	// 头节点处理
 	if n1 == cur.Val {
 		return c.HeadSwap(n2)
@@ -237,6 +233,11 @@ func (c *Chain) HeadSwap(val int) *Chain {
 	return c
 }
 
+```
+
+
+### 并归排序
+```go
 // Sort 并归排序
 func (c *Chain) Sort() *Chain {
 	head := c.Head
@@ -282,16 +283,6 @@ func (c *Chain) Sort() *Chain {
 	l1, l2 := &Chain{head}, &Chain{n}
 	return merge((l1).Sort(), (l2).Sort())
 }
+```
 
-// ListNode 节点
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
 
-// Insert 向节点后插入
-func (l *ListNode) Insert(val int) *ListNode {
-	n := &ListNode{val, l.Next}
-	l.Next = n
-	return l
-}
