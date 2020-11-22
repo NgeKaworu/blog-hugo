@@ -22,3 +22,4 @@ function helper(a: string): number {
 }
 ```
 利用质数映射字母，求出乘积。
+<!--more-->
