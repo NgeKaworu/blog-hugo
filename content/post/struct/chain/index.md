@@ -1,6 +1,6 @@
 ---
 date: 2020-11-21T22:20:13+08:00
-title: "【数据结构】链表(chain)学记笔记"
+title: "【数据结构】链表(chain)学习笔记"
 draft: false
 tags: ["数据结构"]
 keywords:

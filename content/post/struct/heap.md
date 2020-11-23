@@ -1,6 +1,6 @@
 ---
 date: 2020-11-18T16:06:36+08:00
-title: "【数据结构】堆(heap)学记笔记"
+title: "【数据结构】堆(heap)学习笔记"
 draft: false
 tags: ["数据结构"]
 keywords:
