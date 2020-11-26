@@ -9,6 +9,12 @@ keywords:
 - "红黑树"
 description : "数据结构学习之红黑树"
 ---
+## 参考资料
+[维基(中文)](https://zh.wikipedia.org/wiki/%E7%BA%A2%E9%BB%91%E6%A0%91)  
+[维基(英文)](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree)  
+算法导论(第三版)第13章  
+
+
 ## 简述
 红黑树(RBT)是一种自平衡的二叉搜索树(BST), 首先看BST的定义
 >  二叉查找树，也称有序二叉树（ordered binary tree），或已排序二叉树（sorted binary tree），是指一棵空树或者具有下列性质的二叉树：
