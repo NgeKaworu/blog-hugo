@@ -13,6 +13,8 @@ description : "数据结构学习之红黑树"
 [维基(中文)](https://zh.wikipedia.org/wiki/%E7%BA%A2%E9%BB%91%E6%A0%91)  
 [维基(英文)](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree)  
 算法导论(第三版)第13章  
+[删除理解1](https://zhuanlan.zhihu.com/p/145006031)
+[删除理解2](https://blog.csdn.net/qq_32924343/article/details/80927514)
 
 
 ## 简述
