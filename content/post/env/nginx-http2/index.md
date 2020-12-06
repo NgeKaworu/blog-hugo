@@ -21,7 +21,7 @@ description : "win10使用chocolatey极速搭建开发环境"
 [细节参考](https://www.zhihu.com/question/34074946)  
 
 一言蔽之, 快了很多~
-
+<!--more-->
 ## nginx上配置
 首先nginx要1.9以上且在ssl环境下才能开启http2
 ### 检查版本
