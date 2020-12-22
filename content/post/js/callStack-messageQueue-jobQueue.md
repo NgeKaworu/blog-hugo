@@ -16,7 +16,7 @@ keywords:
 - microtask
 - setImmediate()
 - process.nextTick()
-description : "散列函数的介绍"
+description : "js 微任务、宏任务、调用栈; node process.nextTick()和setImmedate()使用"
 ---
 
 `消息队列(message queue)`里的任务也被称作`宏任务(macrotask)`  
@@ -327,11 +327,16 @@ describe('deferredExecution', () => {
 // IO1
 
 ```
-  
+## setImmediate() 对比 setTimeout()
+如果运行以下不在 I/O 周期（即主模块）内的脚本，则执行两个计时器的顺序是非确定性的，因为它受进程性能的约束;但是，如果你把这两个函数放入一个 I/O 循环内调用，setImmediate 总是被优先调用.  
+[详情请看][event loop]
 
 ## 参考资料
 [消息队列和事件循环、宏任务和微任务](https://juejin.cn/post/6844903984856055821)  
 [The Node.js Event Loop](https://nodejs.dev/learn/the-nodejs-event-loop)  
 [Understanding process.nextTick()](https://nodejs.dev/learn/understanding-process-nexttick)  
 [Understanding setImmediate()](https://nodejs.dev/learn/understanding-setimmediate)  
-[setImmediate vs. nextTick](https://stackoverflow.com/questions/15349733/setimmediate-vs-nexttick)
+[setImmediate vs. nextTick](https://stackoverflow.com/questions/15349733/setimmediate-vs-nexttick)  
+
+
+[event loop]: https://nodejs.org/zh-cn/docs/guides/event-loop-timers-and-nexttick/
