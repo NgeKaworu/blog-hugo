@@ -145,3 +145,7 @@ foo();
 // bar
 // second message job 
 ```
+
+## 参考资料
+[消息队列和事件循环、宏任务和微任务](https://juejin.cn/post/6844903984856055821)  
+[The Node.js Event Loop](https://nodejs.dev/learn/the-nodejs-event-loop)
