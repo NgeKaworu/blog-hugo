@@ -152,6 +152,8 @@ foo();
 ```
 
 ## process.nextTick()
+
+### 解释
 Every time the event loop takes a full trip, we call it a tick.   
 > 每次事件循环进行一整趟时，我们都将其称为tick。  
 
@@ -166,6 +168,7 @@ we instruct the engine to invoke this function at the end of the current operati
 
 我测试下来, 他的优先级大于微任务, 会在微任务之前执行, 然后执行完所有内部代码, 有趣的是, 它内部如果有微任务, 那么会和外部的微任务交替插入. 具体行为, 请复制下面的代码自己跑一跑, 我现在脑壳疼.
 
+### 例子
 ```js
 process.nextTick(() => {
     console.log("1 tick");
@@ -263,6 +266,7 @@ process.nextTick(() => {
 ```
 
 ## setImmediate
+### 解释
 简单的说`setImmediate`会在任何`I/O`操作之后执行, 以下抄自stack overflow的解答 ——   
 
 Use setImmediate if you want to queue the function behind whatever I/O event callbacks that are already in the event queue.  
@@ -277,7 +281,7 @@ So in a case where you're trying to break up a long running, CPU-bound job using
 > 因此，在您尝试使用递归分解长时间运行且受CPU限制的作业的情况下，您现在想使用setImmediate而不是process.nextTick将下一次迭代排队，因为否则所有I / O事件回调都不会没有机会在迭代之间运行。  
 
 
-
+### 例子
 ```js
 import fs from 'fs';
 import http from 'http';
