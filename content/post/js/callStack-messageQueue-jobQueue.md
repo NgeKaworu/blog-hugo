@@ -1,5 +1,5 @@
 ---
-title: "Js里的调用栈(call stack)、消息队列(message queue) 、工作队列(job queue)、process.nextTick()"
+title: "Js里的调用栈(call stack)、消息队列(message queue) 、工作队列(job queue)、process.nextTick()、setImmediate()"
 date: 2020-12-22T09:21:27+08:00
 draft: false
 tags: ["js"]
@@ -14,6 +14,8 @@ keywords:
 - macrotask
 - 微任务
 - microtask
+- setImmediate()
+- process.nextTick()
 description : "散列函数的介绍"
 ---
 
@@ -23,7 +25,7 @@ description : "散列函数的介绍"
 `工作队列(job queue)`里的任务也被称作`微任务(microtask)`  
 > MutationObserver、和Promise属于微任务  
 
-`process.nextTick()`是node独有的`插队`方法  
+`process.nextTick()`和`setImmediate()`是node独有的`插队`方法  
 
 
 <!--more-->
@@ -259,9 +261,73 @@ process.nextTick(() => {
   // 7 tick
   
 ```
+
+## setImmediate
+简单的说`setImmediate`会在任何`I/O`操作之后执行, 以下抄自stack overflow的解答 ——   
+
+Use setImmediate if you want to queue the function behind whatever I/O event callbacks that are already in the event queue.  
+> 如果要将函数放在事件队列中已经存在的任何I / O事件回调后面，请使用setImmediate。  
+
+
+Use process.nextTick to effectively queue the function at the head of the event queue so that it executes immediately after the current function completes.   
+> 使用process.nextTick将函数有效地放在事件队列的开头，以便在当前函数完成后立即执行。  
+
+
+So in a case where you're trying to break up a long running, CPU-bound job using recursion, you would now want to use setImmediate rather than process.nextTick to queue the next iteration as otherwise any I/O event callbacks wouldn't get the chance to run between iterations.   
+> 因此，在您尝试使用递归分解长时间运行且受CPU限制的作业的情况下，您现在想使用setImmediate而不是process.nextTick将下一次迭代排队，因为否则所有I / O事件回调都不会没有机会在迭代之间运行。  
+
+
+
+```js
+import fs from 'fs';
+import http from 'http';
+
+const options = {
+  host: 'www.stackoverflow.com',
+  port: 80,
+  path: '/index.html'
+};
+
+describe('deferredExecution', () => {
+  it('deferredExecution', (done) => {
+    console.log('Start');
+    setTimeout(() => console.log('TO1'), 0);
+    setImmediate(() => console.log('IM1'));
+    process.nextTick(() => console.log('NT1'));
+    setImmediate(() => console.log('IM2'));
+    process.nextTick(() => console.log('NT2'));
+    http.get(options, () => console.log('IO1'));
+    fs.readdir(process.cwd(), () => console.log('IO2'));
+    setImmediate(() => console.log('IM3'));
+    process.nextTick(() => console.log('NT3'));
+    setImmediate(() => console.log('IM4'));
+    fs.readdir(process.cwd(), () => console.log('IO3'));
+    console.log('Done');
+    setTimeout(done, 1500);
+  });
+});
+
+// 输出
+// Start
+// Done
+// NT1
+// NT2
+// NT3
+// TO1
+// IO2
+// IO3
+// IM1
+// IM2
+// IM3
+// IM4
+// IO1
+
+```
   
 
 ## 参考资料
 [消息队列和事件循环、宏任务和微任务](https://juejin.cn/post/6844903984856055821)  
 [The Node.js Event Loop](https://nodejs.dev/learn/the-nodejs-event-loop)  
-[Understanding process.nextTick()](https://nodejs.dev/learn/understanding-process-nexttick)
+[Understanding process.nextTick()](https://nodejs.dev/learn/understanding-process-nexttick)  
+[Understanding setImmediate()](https://nodejs.dev/learn/understanding-setimmediate)  
+[setImmediate vs. nextTick](https://stackoverflow.com/questions/15349733/setimmediate-vs-nexttick)
