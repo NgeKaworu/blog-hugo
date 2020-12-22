@@ -17,10 +17,11 @@ keywords:
 description : "散列函数的介绍"
 ---
 
-`消息队列(message queue)`里的任务也被称作`宏任务(macrotask)`
-> I/O操作、fetch、event(onClick)、渲染任务都是宏任务
-`工作队列(job queue)`里的任务也被称作`微任务(microtask)`
-> MutationObserver、和Promise属于微任务
+`消息队列(message queue)`里的任务也被称作`宏任务(macrotask)`  
+> I/O操作、fetch、event(onClick)、渲染任务都是宏任务  
+
+`工作队列(job queue)`里的任务也被称作`微任务(microtask)`  
+> MutationObserver、和Promise属于微任务  
 
 <!--more-->
 以下图片、例子均来自node官网
