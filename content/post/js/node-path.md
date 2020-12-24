@@ -2,7 +2,7 @@
 title: "【Node】Path模块填坑"
 date: 2020-12-22T14:02:06+08:00
 draft: false
-tags: ["js"]
+tags: ["前端"]
 keywords:
 - __pathname
 - __dirname

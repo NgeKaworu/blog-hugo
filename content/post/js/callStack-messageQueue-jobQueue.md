@@ -2,7 +2,7 @@
 title: "Js里的调用栈(call stack)、消息队列(message queue) 、工作队列(job queue)、process.nextTick()、setImmediate()"
 date: 2020-12-22T09:21:27+08:00
 draft: false
-tags: ["js"]
+tags: ["前端"]
 keywords:
 - 调用栈
 - call stack
