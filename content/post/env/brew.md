@@ -45,6 +45,8 @@ brew cask install steam
 
 # go blog 生成器
 brew install hugo
+# git svn
+brew install git subversion
 brew install go
 brew install yarn
 brew install deno
