@@ -47,6 +47,10 @@ brew cask install steam
 brew install hugo
 # git svn
 brew install git subversion
+# mysql
+brew install mysql
+# mysql ui客户端
+brew install phpmyadmin
 brew install go
 brew install yarn
 brew install deno
