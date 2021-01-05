@@ -51,6 +51,10 @@ brew install git subversion
 brew install mysql
 # mysql ui客户端
 brew install phpmyadmin
+# php版本管理工具
+brew install brew-php-switcher
+# mamp 集成环境
+brew install --cask mamp
 brew install go
 brew install yarn
 brew install deno
