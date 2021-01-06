@@ -23,4 +23,5 @@ description : "mac原生MAMP环境搭建"
 [mac安装老版本php](https://newsn.net/say/brew-install-php56.html)  
 [重写mamp apache下php版本](https://stackoverflow.com/questions/16783558/how-can-i-add-additional-php-versions-to-mamp)  
 
+<!--more-->
 ## Q&A
