@@ -31,8 +31,8 @@ description : "基于RBAC模型用户中心设计"
 
 1. 首先创建一个root角色
 2. child角色继承parent角色
-3. 所以child行使的权限，parent都可以行使
-4. 加也角色组方便批处理
+3. 所有child行使的权限，parent都可以行使
+4. 加个角色组方便批处理
 
 
 完成解决
