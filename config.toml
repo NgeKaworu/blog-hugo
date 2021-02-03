@@ -1,4 +1,4 @@
-baseURL = "https://furan.xyz/"
+baseURL = "https://blog.furan.xyz/"
 languageCode = "zh-cn"
 title = "fuRan's Code"
 theme = "fuji"
