@@ -1,7 +1,8 @@
 ---
 date: 2021-02-02T11:08:01+08:00
-title: "【微应用】单词卡（flashcard）设计规划"
+title: "【单词卡】设计规划"
 tags: ["设计规划", "个人项目"]
+draft: false
 keywords:
 - flashcard
 - 单词卡
