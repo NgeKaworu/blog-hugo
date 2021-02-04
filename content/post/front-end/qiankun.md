@@ -13,7 +13,7 @@ description: "关于qiankun的填坑记录"
 
 ## 前言
 
-qiankun[qiankun]是一个微前端的解决方案，是 single-spa[single-spa]的封装。因同属 umi[umi]体系，用 umi 脚手架，只需要安装[@umijs/plugin-qiankun](https://umijs.org/zh-CN/plugins/plugin-qiankun)这个插件，然后做些简单配置就可以使用。这里不讨论如何使用。开发体验不错，但是 ——
+[qiankun]是一个微前端的解决方案，是 [single-spa]的封装。因同属 [umi]体系，用 [umi] 脚手架，只需要安装[@umijs/plugin-qiankun](https://umijs.org/zh-CN/plugins/plugin-qiankun)这个插件，然后做些简单配置就可以使用。这里不讨论如何使用。开发体验不错，但是 ——
 
 <!--more-->
 
