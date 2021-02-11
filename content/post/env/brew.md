@@ -74,6 +74,8 @@ brew cask install cheatsheet
 brew cask install rectangle
 # 播放器
 brew cask install iina
+# tree comand
+brew install tree
 ```
 
 ## 常用命令
