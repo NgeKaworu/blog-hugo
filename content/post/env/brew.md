@@ -26,22 +26,22 @@ description : "mac使用brew安装常用开发工具"
 ## 常用工具
 ```zsh
 # proxy
-brew cask install v2rayu
-brew cask install google-chrome
+brew --cask install v2rayu
+brew --cask install google-chrome
 # 下载工具
-brew cask install free-download-manager
+brew --cask install free-download-manager
 # 飞书
-brew cask install feishu
+brew --cask install feishu
 # 微信
-brew cask install wechat
-brew cask install onedrive
-brew cask install robo-3t
-brew cask install postman
-brew cask install sourcetree
+brew --cask install wechat
+brew --cask install onedrive
+brew --cask install robo-3t
+brew --cask install postman
+brew --cask install sourcetree
 # sftp 客户端
-brew cask install electerm
+brew --cask install electerm
 brew install mongodb-community@4.4
-brew cask install steam
+brew --cask install steam
 
 # go blog 生成器
 brew install hugo
@@ -63,17 +63,17 @@ brew install aria2
 brew install p7zip
 brew install nvm
 # 解压工具
-brew cask install keka
+brew --cask install keka
 # 剪切板
-brew cask install maccy
+brew --cask install maccy
 # 温度监控 收费
 brew cask install istat-menus
 # 快捷键助手
-brew cask install cheatsheet
+brew --cask install cheatsheet
 # 窗口管理
-brew cask install rectangle
+brew --cask install rectangle
 # 播放器
-brew cask install iina
+brew --cask install iina
 # tree comand
 brew install tree
 ```
@@ -84,7 +84,7 @@ brew install tree
 # 更新所有包
 brew upgrade
 # 更新所有app
-brew upgrade --cask --greedy
+brew upgrade cask --greedy
 ```
 
 ## 附录
