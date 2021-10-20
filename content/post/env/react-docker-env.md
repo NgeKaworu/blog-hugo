@@ -53,7 +53,7 @@ services:
   front:
     build:
       context: .
-      dockerfile: .Dockerfile
+      dockerfile: Dockerfile
     image: node-git:dev
     container_name: ${BRANCH:?err}
     environment:
