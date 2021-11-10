@@ -1,0 +1,19 @@
+FROM golang:latest  as builder
+
+RUN mkdir -p /home/src
+
+WORKDIR /home/src
+RUN pwd && \ 
+    git clone https://github.com/gohugoio/hugo.git . && \ 
+    go install && \
+    CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o bin/hugo
+
+FROM alpine:latest
+
+RUN mkdir -p /home/hugo
+
+WORKDIR /home/hugo
+
+COPY --from=builder /home/src/bin /home/hugo
+
+RUN ln -s /hugo /usr/bin/hugo

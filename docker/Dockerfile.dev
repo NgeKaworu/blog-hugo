@@ -1,0 +1,12 @@
+FROM ngekaworu/basic-hugo:latest
+
+EXPOSE 1313
+
+RUN mkdir -p /home/blog/app && \
+    apk add --update --no-cache git openssh
+
+WORKDIR /home/blog/app
+
+COPY . .
+
+CMD ["sh"]

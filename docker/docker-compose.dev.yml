@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  blog-hugo-dev:
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile.dev
+    image: blog-hugo:dev
+    container_name: blog-hugo-dev
+    stdin_open: true
+    tty: true
+    environment:
+      BRANCH: ${BRANCH:-master}
+    networks:
+      - frontend
+    ports:
+      - 1313:1313
+    volumes:
+      - ~/.ssh:/root/.ssh
+
+networks:
+  frontend:
+    name: frontend
+    driver: bridge
