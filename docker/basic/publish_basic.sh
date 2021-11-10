@@ -1,5 +1,5 @@
 #!/bin/bash
 set -e
 
-docker compose -f ./docker-compose.yml --env-file ~/.env build;
-docker push ngekaworu/blog-hugo;
+docker build -f Dockerfile.basic -t ngekaworu/basic-hugo .;
+docker push ngekaworu/basic-hugo;
