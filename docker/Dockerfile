@@ -6,7 +6,8 @@ WORKDIR /home/blog/app
 
 COPY . .
 
-RUN hugo
+RUN apk add --update --no-cache git && \ 
+    hugo
 
 FROM nginx:stable-alpine
 
