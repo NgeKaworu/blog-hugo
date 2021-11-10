@@ -4,16 +4,17 @@ RUN mkdir -p /home/src
 
 WORKDIR /home/src
 RUN pwd && \ 
-    git clone https://github.com/gohugoio/hugo.git . && \ 
+    git clone --depth 1 --branch master --single-branch https://github.com/gohugoio/hugo.git . && \ 
     go install && \
     CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o bin/hugo
 
 FROM alpine:latest
 
-RUN mkdir -p /home/hugo
+RUN mkdir -p /home
 
-WORKDIR /home/hugo
+WORKDIR /home
 
-COPY --from=builder /home/src/bin /home/hugo
+COPY --from=builder /home/src/bin /home/
 
-RUN ln -s /hugo /usr/bin/hugo
+RUN chmod 777 /home/hugo && \ 
+    ln -s /home/hugo /usr/bin/hugo
