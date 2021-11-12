@@ -1,0 +1,24 @@
+name: CI/CD
+on: 
+  push:
+    branches: 
+      - master
+  # 开启手动部署
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Auto CI/CD
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Boot
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOYER }}
+          password: ${{ secrets.DEPLOY_PWD }}
+          port: ${{ secrets.DEPLOY_PORT }}
+          script: | 
+            cd blog-hugo/docker
+            sh boot.sh
