@@ -21,4 +21,6 @@ jobs:
           port: ${{ secrets.DEPLOY_PORT }}
           script: | 
             cd blog-hugo/docker
+            git checkout master
+            git pull
             sh boot.sh
