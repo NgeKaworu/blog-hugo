@@ -23,4 +23,5 @@ jobs:
             cd blog-hugo
             git checkout master
             git pull
-            sh docker/boot.sh
+            cd docker
+            sh boot.sh
