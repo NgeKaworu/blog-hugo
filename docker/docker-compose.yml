@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   blog-hugo:
-  restart: "always"
+    restart: "always"
     build:
       context: ../
       dockerfile: ./docker/Dockerfile

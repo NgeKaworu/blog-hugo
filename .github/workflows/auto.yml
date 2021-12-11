@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.DEPLOY_PWD }}
           port: ${{ secrets.DEPLOY_PORT }}
           script: | 
-            cd blog-hugo/docker
+            cd blog-hugo
             git checkout master
             git pull
-            sh boot.sh
+            sh docker/boot.sh
