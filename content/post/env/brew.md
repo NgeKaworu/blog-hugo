@@ -83,6 +83,10 @@ brew install tree
 ```bash
 # 更新所有包
 brew upgrade
+# 2022-01-11 更新
+# 更新所有app 改为
+brew upgrade --cask --greedy
+
 # 更新所有app
 brew upgrade cask --greedy
 ```
