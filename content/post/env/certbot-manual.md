@@ -10,7 +10,7 @@ description : "手动生成证书"
 ---
 
 ### 新增
-certbot certonly --email ngekaworu@gmail.com --manual --key-type ecdsa -d furan.xyz -d api.furan.xyz -d micro.furan.xyz -d blog.furan.xyz
+certbot certonly --email ngekaworu@gmail.com --standalone --key-type ecdsa -d furan.xyz -d api.furan.xyz -d micro.furan.xyz -d blog.furan.xyz
 
 --email 邮箱
 --manual 手动
