@@ -45,3 +45,8 @@ mvn install:install-file -Dfile=sass-starter-applets-auto-release-sources.jar -D
 
 -Dpackaging=javadoc //文档包
 ```
+
+
+#### 编译后无法查看源码解决
+1. 使用DeCompiler 插件（不推荐）
+2. 打一个source包，然后右键attach source选择它
