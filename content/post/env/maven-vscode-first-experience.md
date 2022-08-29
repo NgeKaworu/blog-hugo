@@ -8,6 +8,8 @@ keywords:
 - "mac"
 description : "vscode maven 初体验"
 ---
+用vscode 跑maven项目
+<!--more-->
 
 ### build通过
 ```bash
