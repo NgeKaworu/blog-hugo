@@ -31,6 +31,13 @@ gitlab-ctl start;
 ```
 1. docker login 失败
     1. 登录失败有两个解法，提供https的外网访问地址
+    ```rb
+    registry_external_url 'https://registry.gitlab.example.com:7001' #https
+    registry_nginx['redirect_http_to_https'] = true # 重定向
+    # 默认证书位置在 /etc/gitlab/ssl/
+    registry_nginx['ssl_certificate'] = "/path/to/registry.gitlab.example.pem"  # 自定义证书位置
+    registry_nginx['ssl_certificate_key'] = "/path/to/registry.gitlab.example.key"  # 自定义证书位置
+    ```
     2. 在本机的`~/.docker/daemon.json`或`/etc/docker/daemon.json`文件里加入
       ```json
       {
