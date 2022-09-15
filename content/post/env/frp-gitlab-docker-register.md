@@ -47,8 +47,8 @@ frp分服务端和客户端[文档](https://gofrp.org/docs/)
 ```ini
 [common]
 bind_port = 7000 # 本地端口
-vhost_http_port=7070 # http转发端口
-vhost_https_port=7001 # https转发端口
+vhost_http_port=7070 # http转发端口 端口要和 external_url 的一致
+vhost_https_port=7001 # https转发端口 端口要和 registry_external_url 的一致
 log_file=/opt/frp/frps.log # 日志位置
 ```
 
