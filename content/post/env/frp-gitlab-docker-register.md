@@ -82,7 +82,8 @@ plugin_header_X-From-Where = frp
 type = https
 # 填写实际域名
 custom_domains = docker.gitlab.example.com
-plugin = https2http
+# 如果你registry_external_url是http的，这里请用https2http
+plugin = https2https 
 plugin_local_addr = 127.0.0.1:7001
 
 # HTTPS 证书相关的配置
