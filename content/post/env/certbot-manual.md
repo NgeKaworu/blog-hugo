@@ -10,7 +10,7 @@ description : "手动生成证书"
 ---
 
 ### 新增
-certbot certonly --email ngekaworu@gmail.com --standalone --key-type ecdsa -d furan.xyz -d api.furan.xyz -d micro.furan.xyz -d blog.furan.xyz
+certbot certonly --email ngekaworu@gmail.com --standalone --key-type ecdsa -d furan.vip -d api.furan.vip -d micro.furan.vip -d blog.furan.vip
 
 --email 邮箱
 --manual 手动
@@ -18,7 +18,7 @@ certbot certonly --email ngekaworu@gmail.com --standalone --key-type ecdsa -d fu
 -d 域名
 
 ### 删除
-certbot delete --cert-name furan.xyz
+certbot delete --cert-name furan.vip
 
 ### 更新
 certbot renew
